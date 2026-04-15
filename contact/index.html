@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us – Health Reviews Lab</title>
+<meta name="description" content="Get in touch with Health Reviews Lab. Questions about our reviews, corrections, or partnership inquiries — we read every message.">
+<link rel="canonical" href="https://healthreviewslab.com/contact/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Health Reviews Lab",
+  "url": "https://healthreviewslab.com/contact/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Reviews Lab",
+    "url": "https://healthreviewslab.com",
+    "email": "contact.healthreviewslab@gmail.com"
+  }
+}
+</script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+  :root {
+    --primary: #1a3a2a;
+    --accent: #4a9e6b;
+    --accent-light: #e8f5ee;
+    --text: #2c2c2c;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --white: #ffffff;
+    --bg: #f9fafb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+  }
+
+  header {
+    background: var(--primary);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .logo span { color: #7dd3a8; }
+
+  nav a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 28px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: #7dd3a8; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #2d5a3d 100%);
+    padding: 72px 24px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 520px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 56px 0;
+  }
+
+  .contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-light);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .contact-item h3 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+
+  .contact-item p {
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .contact-item a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .response-time {
+    background: var(--accent-light);
+    border: 1px solid #c3e6d1;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    color: var(--primary);
+    margin-top: 16px;
+  }
+
+  .contact-form {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+
+  .contact-form h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--white);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(74,158,107,0.12);
+  }
+
+  textarea { resize: vertical; min-height: 130px; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 0.3px;
+  }
+
+  .submit-btn:hover {
+    background: #3d8a5c;
+    transform: translateY(-1px);
+  }
+
+  .faq-section {
+    margin: 0 0 56px;
+  }
+
+  .faq-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    background: var(--bg);
+  }
+
+  .faq-item h3 {
+    color: var(--primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .faq-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  footer {
+    background: var(--primary);
+    color: rgba(255,255,255,0.7);
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  footer a {
+    color: #7dd3a8;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.9rem;
+  }
+
+  footer p { margin-top: 16px; font-size: 0.85rem; }
+
+  @media (max-width: 640px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-form { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="https://healthreviewslab.com" class="logo">Health<span>Reviews</span>Lab</a>
+    <nav>
+      <a href="https://healthreviewslab.com">Home</a>
+      <a href="https://healthreviewslab.com/about/">About</a>
+      <a href="https://healthreviewslab.com/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>Contact Us</h1>
+  <p>We read every message. Whether it's a question, correction, or feedback — reach out and we'll respond.</p>
+</div>
+
+<div class="container">
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+
+      <div class="contact-item">
+        <div class="contact-icon">📧</div>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:contact.healthreviewslab@gmail.com">contact.healthreviewslab@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <h3>Response Time</h3>
+          <p>Within 48 business hours</p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <h3>Location</h3>
+          <p>United States (Remote)</p>
+        </div>
+      </div>
+
+      <div class="response-time">
+        ✅ We typically respond within 1–2 business days. For urgent matters, please include "URGENT" in your subject line.
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="mailto:contact.healthreviewslab@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option value="">Select a topic...</option>
+            <option value="review-question">Question about a review</option>
+            <option value="correction">Correction or update</option>
+            <option value="product-suggestion">Product suggestion</option>
+            <option value="partnership">Partnership inquiry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>Do you accept products for review?</h3>
+      <p>We research products independently. We do not accept free products in exchange for positive reviews. Our editorial process is not influenced by manufacturers.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I request a review of a specific product?</h3>
+      <p>Yes. If you'd like us to review a supplement or health product, send us the name and where it's sold. We'll evaluate it against our standard research criteria and publish a review if it meets our relevance threshold.</p>
+    </div>
+    <div class="faq-item">
+      <h3>I found incorrect information in a review. What should I do?</h3>
+      <p>Please contact us with the specific correction and any supporting sources. We take accuracy seriously and will update content promptly when errors are identified.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you have an affiliate relationship with the products you review?</h3>
+      <p>Yes, and we disclose this clearly. We participate in affiliate programs and may earn a commission when you purchase through our links. This does not affect our ratings or recommendations. Read our full <a href="https://healthreviewslab.com/affiliate-disclosure/" style="color: var(--accent);">Affiliate Disclosure</a>.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div>
+    <a href="https://healthreviewslab.com/">Home</a>
+    <a href="https://healthreviewslab.com/about/">About</a>
+    <a href="https://healthreviewslab.com/contact/">Contact</a>
+    <a href="https://healthreviewslab.com/privacy-policy/">Privacy Policy</a>
+    <a href="https://healthreviewslab.com/affiliate-disclosure/">Affiliate Disclosure</a>
+    <a href="https://healthreviewslab.com/disclaimer/">Disclaimer</a>
+  </div>
+  <p>© 2026 Health Reviews Lab · All Rights Reserved · contact.healthreviewslab@gmail.com</p>
+</footer>
+
+</body>
+</html>
