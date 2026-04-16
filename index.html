@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Reviews Lab — Independent Supplement Analysis</title>
+<meta name="description" content="Health Reviews Lab provides independent, research-backed reviews of health supplements. No sponsorships. No bias. Just honest analysis from Sarah Mitchell.">
+<link rel="canonical" href="https://healthreviewslab.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Health Reviews Lab",
+  "url": "https://healthreviewslab.com",
+  "description": "Independent supplement reviews backed by ingredient research and consumer feedback.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Health Reviews Lab",
+    "url": "https://healthreviewslab.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://healthreviewslab.com/logo.png"
+    }
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Sarah Mitchell",
+    "jobTitle": "Independent Health Journalist & Wellness Researcher",
+    "url": "https://healthreviewslab.com/about/"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a2e;
+  --ink-soft: #4a4a6a;
+  --cream: #faf8f4;
+  --cream-dark: #f0ece4;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a3;
+  --green: #2d6a4f;
+  --green-light: #e8f5ee;
+  --white: #ffffff;
+  --border: #e2ddd6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.7;
+}
+
+/* HEADER */
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.logo span { color: var(--green); }
+nav { display: flex; gap: 32px; align-items: center; }
+nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav a:hover { color: var(--green); }
+
+/* HERO */
+.hero {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 90px 40px 80px;
+  text-align: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 28px;
+}
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+}
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 22px;
+  letter-spacing: -0.5px;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--green);
+}
+.hero p {
+  font-size: 18px;
+  color: var(--ink-soft);
+  max-width: 580px;
+  margin: 0 auto 36px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.hero-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 0 auto 36px;
+  border-radius: 2px;
+}
+.author-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), #52b788);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.author-bar strong { color: var(--ink); }
+
+/* STATS */
+.stats {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 40px;
+}
+.stats-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+.stat {
+  text-align: center;
+  padding: 20px;
+  border-right: 1px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+.stat-num {
+  font-family: 'DM Serif Display', serif;
+  font-size: 36px;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 13px;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+/* METHODOLOGY */
+.methodology {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 70px 40px;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.methodology h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--ink);
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+.methodology > p {
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 620px;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.method-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.method-card:hover {
+  border-color: var(--green);
+  box-shadow: 0 4px 20px rgba(45,106,79,0.08);
+}
+.method-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.method-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.method-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+/* CATEGORIES */
+.categories {
+  background: var(--cream-dark);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 70px 40px;
+}
+.categories-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.categories h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(26px, 4vw, 36px);
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.categories > .categories-inner > p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.cat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+}
+.cat-icon { font-size: 32px; margin-bottom: 10px; }
+.cat-card h3 { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+.cat-card p { font-size: 12px; color: var(--ink-soft); }
+
+/* ABOUT SARAH */
+.about-sarah {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 70px 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  align-items: center;
+}
+.sarah-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2d6a4f, #52b788);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 56px;
+  color: white;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.sarah-content .section-label { margin-bottom: 10px; }
+.sarah-content h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.sarah-content p {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.sarah-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 8px;
+}
+.sarah-link:hover { text-decoration: underline; }
+
+/* DISCLAIMER */
+.disclaimer {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  padding: 28px 40px;
+  text-align: center;
+}
+.disclaimer p {
+  font-size: 12px;
+  color: var(--ink-soft);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  background: var(--ink);
+  padding: 48px 40px 32px;
+  color: rgba(255,255,255,0.5);
+}
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.footer-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+.footer-logo span { color: #52b788; }
+.footer-tagline {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-top: 6px;
+}
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+.footer-links a {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: rgba(255,255,255,0.9); }
+.footer-bottom {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  header { padding: 16px 20px; }
+  nav { display: none; }
+  .hero { padding: 60px 20px 50px; }
+  .stats { padding: 30px 20px; }
+  .stats-inner { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .stat:last-child { border-bottom: none; }
+  .methodology, .categories { padding: 50px 20px; }
+  .method-grid { grid-template-columns: 1fr; }
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .about-sarah { grid-template-columns: 1fr; padding: 50px 20px; text-align: center; }
+  .footer-top { flex-direction: column; gap: 24px; }
+  .footer-links { flex-wrap: wrap; gap: 16px; }
+  .disclaimer { padding: 24px 20px; }
+  footer { padding: 40px 20px 28px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Health<span>Reviews</span>Lab</a>
+  <nav>
+    <a href="/about/">About</a>
+    <a href="/affiliate-disclosure/">Disclosure</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-badge">Independent · Research-Based · Unsponsored</div>
+  <h1>Honest Reviews for <em>Real</em> Health Decisions</h1>
+  <p>We research supplement ingredients, analyze consumer feedback, and tell you what actually works — without the marketing spin.</p>
+  <div class="hero-divider"></div>
+  <div class="author-bar">
+    <div class="author-avatar">S</div>
+    <span>By <strong>Sarah Mitchell</strong> · Independent Health Journalist & Wellness Researcher</span>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Supplements Reviewed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">9 yrs</div>
+      <div class="stat-label">Industry Research</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">0</div>
+      <div class="stat-label">Paid Sponsorships</div>
+    </div>
+  </div>
+</div>
+
+<section class="methodology">
+  <div class="section-label">Our Approach</div>
+  <h2>How We Review Supplements</h2>
+  <p>Every review on Health Reviews Lab follows the same rigorous process — no shortcuts, no exceptions.</p>
+  <div class="method-grid">
+    <div class="method-card">
+      <div class="method-icon">🔬</div>
+      <h3>Ingredient Analysis</h3>
+      <p>We research each ingredient individually — checking peer-reviewed studies for dosage efficacy and mechanism of action.</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">💬</div>
+      <h3>Consumer Feedback</h3>
+      <p>We analyze hundreds of real user reviews across multiple platforms to identify consistent patterns — positive and negative.</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">⚖️</div>
+      <h3>Balanced Reporting</h3>
+      <p>We highlight what works and what doesn't. A product we recommend still gets its downsides disclosed clearly.</p>
+    </div>
+    <div class="method-card">
+      <div class="method-icon">🔄</div>
+      <h3>Regular Updates</h3>
+      <p>Formulas change. We revisit and update reviews when manufacturers modify their products or new data emerges.</p>
+    </div>
+  </div>
+</section>
+
+<section class="categories">
+  <div class="categories-inner">
+    <div class="section-label">Review Categories</div>
+    <h2>What We Cover</h2>
+    <p>We focus on supplements where consumer confusion is highest and misinformation most common.</p>
+    <div class="cat-grid">
+      <div class="cat-card">
+        <div class="cat-icon">👁️</div>
+        <h3>Vision Health</h3>
+        <p>Eye support supplements</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🩸</div>
+        <h3>Blood Sugar</h3>
+        <p>Glucose management aids</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🔥</div>
+        <h3>Weight Management</h3>
+        <p>Fat burners & metabolism</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">❤️</div>
+        <h3>Cardiovascular</h3>
+        <p>Heart & circulation support</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">🦷</div>
+        <h3>Dental Health</h3>
+        <p>Oral microbiome supplements</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">💪</div>
+        <h3>Men's Health</h3>
+        <p>Performance & vitality</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-sarah">
+  <div class="sarah-avatar">S</div>
+  <div class="sarah-content">
+    <div class="section-label">Meet the Reviewer</div>
+    <h2>Sarah Mitchell</h2>
+    <p>Independent Health Journalist & Wellness Researcher with 9 years covering the supplement industry. I've personally analyzed over 200 products — reviewing ingredient research, manufacturer claims, and real consumer outcomes.</p>
+    <p>My work is entirely self-funded. I don't accept sponsored posts, free products, or affiliate arrangements that compromise my editorial independence. When I do use affiliate links, it's disclosed clearly on every page.</p>
+    <a href="/about/" class="sarah-link">Read my full methodology →</a>
+  </div>
+</section>
+
+<div class="disclaimer">
+  <p><strong>Affiliate Disclosure:</strong> Health Reviews Lab participates in affiliate programs. Some links on this site may earn a commission at no additional cost to you. This never influences our reviews or recommendations. See our full <a href="/affiliate-disclosure/" style="color:var(--green)">Affiliate Disclosure</a>.</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-logo">Health<span>Reviews</span>Lab</a>
+        <div class="footer-tagline">Independent supplement analysis since 2024</div>
+      </div>
+      <div class="footer-links">
+        <a href="/about/">About</a>
+        <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+        <a href="/disclaimer/">Disclaimer</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Health Reviews Lab · healthreviewslab.com · All opinions are those of Sarah Mitchell and do not constitute medical advice.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
