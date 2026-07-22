@@ -44,7 +44,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
 .nota{font-size:11px;color:#999;border-top:1px solid var(--border);padding-top:16px;margin-top:24px;line-height:1.7}
 @media(max-width:600px){nav{display:none}.hero{padding:40px 20px 32px}}
 
-.home-hero{background:linear-gradient(160deg,#0a1628,#1a2a4a);padding:72px 24px 60px;text-align:center}
+.home-hero{background:linear-gradient(160deg,rgba(10,22,40,0.88),rgba(26,42,74,0.92)),url('images/hero-home.jpg') center/cover no-repeat;padding:72px 24px 60px;text-align:center}
 .home-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(30px,6vw,52px);color:#fff;line-height:1.15;margin-bottom:18px}
 .home-hero h1 em{color:var(--gold);font-style:italic}
 .home-hero p{font-size:17px;color:rgba(255,255,255,0.72);max-width:620px;margin:0 auto 32px;font-weight:300;line-height:1.75}
@@ -54,6 +54,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
 .cluster-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px;text-decoration:none;color:var(--text);transition:box-shadow 0.2s,transform 0.2s;display:block}
 .cluster-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-2px)}
 .cluster-icon{font-size:28px;margin-bottom:12px}
+.cluster-thumb{width:100%;height:120px;object-fit:cover;border-radius:10px;margin-bottom:14px;display:block}
 .cluster-card h3{font-family:'DM Serif Display',serif;font-size:18px;color:var(--primary);margin-bottom:8px}
 .cluster-card p{font-size:13px;color:var(--muted);margin:0 0 12px}
 .cluster-count{font-size:12px;font-weight:600;color:var(--accent)}
@@ -94,60 +95,83 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
 <div class="container">
   <div style="padding:40px 0 20px">
     <div class="section-title">Our Coverage Areas</div>
-    <div class="section-sub">Nine wellness categories — analyzed in depth.</div>
+    <div class="section-sub">Eleven wellness categories — analyzed in depth.</div>
     <div class="clusters">
       <a href="https://healthreviewslabs.com/mens-health/" class="cluster-card">
+        <img src="images/hub-mens-health.jpg" alt="Mens Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">💪</div>
         <h3>Men's Health & Prostate</h3>
         <p>Prostate support, testosterone formulas, nitric oxide supplements, and male vitality products — analyzed against published clinical research.</p>
         <span class="cluster-count">10 products analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/metabolic-health/" class="cluster-card">
+        <img src="images/hub-metabolic-health.jpg" alt="Metabolic Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">🩸</div>
         <h3>Blood Sugar & Metabolic Health</h3>
         <p>Blood sugar regulation, insulin sensitivity, weight management, and metabolic rate formulas — ingredient by ingredient.</p>
         <span class="cluster-count">9 products analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/nail-skin-health/" class="cluster-card">
+        <img src="images/hub-nail-skin-health.jpg" alt="Nail Skin Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">🌿</div>
         <h3>Nail, Skin & Oral Health</h3>
         <p>Nail fungus treatments, gut-skin axis supplements, and oral probiotics.</p>
         <span class="cluster-count">9 products analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/eye-health/" class="cluster-card">
+        <img src="images/hub-eye-health.jpg" alt="Eye Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">👁️</div>
         <h3>Eye Health</h3>
         <p>AREDS-2 based formulas for macular degeneration, digital eye strain, and vision support.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/brain-cognitive-health/" class="cluster-card">
+        <img src="images/hub-brain-cognitive-health.jpg" alt="Brain Cognitive Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">🧠</div>
         <h3>Brain & Cognitive Health</h3>
         <p>Stimulant-free nootropic formulas for brain fog, memory decline, and mental clarity.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/hearing-tinnitus-health/" class="cluster-card">
+        <img src="images/hub-hearing-tinnitus-health.jpg" alt="Hearing Tinnitus Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">👂</div>
         <h3>Hearing & Tinnitus Health</h3>
         <p>GABA-based formulas targeting central gain and tinnitus relief.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/joint-health/" class="cluster-card">
+        <img src="images/hub-joint-health.jpg" alt="Joint Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">🦴</div>
         <h3>Joint Health</h3>
         <p>Hyaluronic acid and anti-inflammatory formulas for osteoarthritis and joint mobility.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/lymphatic-health/" class="cluster-card">
+        <img src="images/hub-lymphatic-health.jpg" alt="Lymphatic Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">💧</div>
         <h3>Lymphatic Health</h3>
         <p>Lymphatic drainage and circulatory support formulas for fluid retention and swelling.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
       <a href="https://healthreviewslabs.com/pet-health/" class="cluster-card">
+        <img src="images/hub-pet-health.jpg" alt="Pet Health" class="cluster-thumb" loading="lazy">
         <div class="cluster-icon">🐾</div>
         <h3>Pet Health</h3>
         <p>Gut and immune support probiotics formulated specifically for dogs.</p>
+        <span class="cluster-count">1 product analyzed →</span>
+      </a>
+      <a href="https://healthreviewslabs.com/womens-bladder-health/" class="cluster-card">
+        <img src="images/hub-womens-bladder-health.jpg" alt="Womens Bladder Health" class="cluster-thumb" loading="lazy">
+        <div class="cluster-icon">💧</div>
+        <h3>Women's Bladder Health</h3>
+        <p>Urinary microbiome and probiotic-based bladder support formulas.</p>
+        <span class="cluster-count">1 product analyzed →</span>
+      </a>
+      <a href="https://healthreviewslabs.com/gut-digestive-health/" class="cluster-card">
+        <img src="images/hub-gut-digestive-health.jpg" alt="Gut Digestive Health" class="cluster-thumb" loading="lazy">
+        <div class="cluster-icon">🌿</div>
+        <h3>Gut &amp; Digestive Health</h3>
+        <p>Traditional herbal formulas for bloating and digestive comfort.</p>
         <span class="cluster-count">1 product analyzed →</span>
       </a>
     </div>
