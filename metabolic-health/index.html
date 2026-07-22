@@ -42,6 +42,7 @@ p{font-size:15px;color:var(--muted);margin-bottom:14px;line-height:1.8}
 .product-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:22px;text-decoration:none;color:var(--text);transition:box-shadow 0.2s,transform 0.2s;display:flex;flex-direction:column;gap:10px}
 .product-card:hover{box-shadow:0 8px 32px rgba(0,0,0,0.1);transform:translateY(-2px)}
 .product-card-badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;letter-spacing:1px;text-transform:uppercase}
+.product-thumb{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:4px}
 .badge-review{background:#e8f0fc;color:var(--accent)}
 .product-card h3{font-size:15px;margin:0;color:var(--primary)}
 .product-card p{font-size:13px;margin:0;color:var(--muted);line-height:1.6}
@@ -98,6 +99,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
     <div class="container-wide">
       <div class="product-grid">
         <a href="https://healthreviewslabs.com/gluco6-review/" class="product-card">
+          <img src="../images/gluco6.jpg" alt="Gluco6 bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Gluco6</h3>
           <p>GLUT-4 receptor support formula. Sukre + Gymnema + Chromium targeting Harvard-researched blood sugar mechanism.</p>
@@ -108,6 +110,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/sugar-defender-review/" class="product-card">
+          <img src="../images/sugar-defender.jpg" alt="Sugar Defender bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Sugar Defender</h3>
           <p>24-ingredient liquid drops targeting blood sugar from 6 biological pathways simultaneously.</p>
@@ -118,6 +121,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/insuleaf-review/" class="product-card">
+          <img src="../images/insuleaf.jpg" alt="Insuleaf bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>InsuLeaf</h3>
           <p>13-ingredient formula targeting all 6 blood sugar instability mechanisms. Chromium 217% DV.</p>
@@ -128,6 +132,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/blood-sugar-blaster-review/" class="product-card">
+          <img src="../images/blood-sugar-blaster.jpg" alt="Blood Sugar Blaster bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Blood Sugar Blaster</h3>
           <p>20 bioavailable extracts formulated by Dr. Mat Carter. 180-day guarantee. Free shipping all packages.</p>
@@ -148,6 +153,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
     <div class="container-wide">
       <div class="product-grid">
         <a href="https://healthreviewslabs.com/java-burn-review/" class="product-card">
+          <img src="../images/java-burn.jpg" alt="Java Burn bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Java Burn</h3>
           <p>Patent-pending powder engineered to work synergistically with coffee's caffeine for metabolic enhancement.</p>
@@ -158,6 +164,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/leanbiome-review/" class="product-card">
+          <img src="../images/leanbiome.jpg" alt="Leanbiome bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>LeanBiome</h3>
           <p>9 lean bacteria strains + Greenselect Phytosome targeting gut microbiome root cause of stubborn weight.</p>
@@ -168,6 +175,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/citrusburn-review/" class="product-card">
+          <img src="../images/citrusburn.jpg" alt="Citrusburn bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>CitrusBurn</h3>
           <p>P-synephrine from Seville orange targeting thermogenic resistance. 12 peer-reviewed citations.</p>
@@ -178,6 +186,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/sumatra-slim-review/" class="product-card">
+          <img src="../images/sumatra-slim.jpg" alt="Sumatra Slim bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Sumatra Slim Belly Tonic</h3>
           <p>8 ingredients targeting blue light-disrupted sleep-metabolism connection. Taken before bed.</p>
@@ -188,6 +197,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
           </div>
         </a>
         <a href="https://healthreviewslabs.com/leptozan-review/" class="product-card">
+          <img src="../images/leptozan.jpg" alt="Leptozan bottle" class="product-thumb" loading="lazy">
           <span class="product-card-badge badge-review">Analysis</span>
           <h3>Leptozan</h3>
           <p>BHB ketones + Dead Sea minerals targeting leptin resistance — the hormonal mechanism behind stubborn weight.</p>
@@ -231,25 +241,29 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
         <p>7 products analyzed — nail fungus, skin health, gut-skin axis, vision, and hearing support.</p>
       </a>
       <a href="https://healthreviewslabs.com/sugarmute-review/" class="product-card">
-        <span class="product-card-badge badge-review">Analysis</span>
+        <img src="../images/sugarmute.jpg" alt="Sugarmute bottle" class="product-thumb" loading="lazy">
+          <span class="product-card-badge badge-review">Analysis</span>
         <h3>SugarMute</h3>
         <p>Fiber-first formula — Glucomannan, Psyllium, Black Walnut for post-meal glucose spikes.</p>
         <div class="product-card-links"><span class="product-card-link">→ Full Review</span></div>
       </a>
       <a href="https://healthreviewslabs.com/cellucare-review/" class="product-card">
-        <span class="product-card-badge badge-review">Analysis</span>
+        <img src="../images/cellucare.jpg" alt="Cellucare bottle" class="product-thumb" loading="lazy">
+          <span class="product-card-badge badge-review">Analysis</span>
         <h3>CelluCare</h3>
         <p>12-ingredient formula — Turmeric, Gymnema, Banaba Leaf for glucose &amp; inflammation.</p>
         <div class="product-card-links"><span class="product-card-link">→ Full Review</span></div>
       </a>
       <a href="https://healthreviewslabs.com/glucotrust-bites-review/" class="product-card">
-        <span class="product-card-badge badge-review">Analysis</span>
+        <img src="../images/glucotrust-bites.jpg" alt="Glucotrust Bites bottle" class="product-thumb" loading="lazy">
+          <span class="product-card-badge badge-review">Analysis</span>
         <h3>GlucoTrust Bites</h3>
         <p>Sublingual chewable — Gymnema, Cinnamon, Cordyceps Militaris. 3x faster absorption.</p>
         <div class="product-card-links"><span class="product-card-link">→ Full Review</span></div>
       </a>
       <a href="https://healthreviewslabs.com/glycomute-review/" class="product-card">
-        <span class="product-card-badge badge-review">Analysis</span>
+        <img src="../images/glycomute.jpg" alt="Glycomute bottle" class="product-thumb" loading="lazy">
+          <span class="product-card-badge badge-review">Analysis</span>
         <h3>Glycomute</h3>
         <p>Botanical formula — Banaba Leaf, Bitter Melon, Gymnema Sylvestre.</p>
         <div class="product-card-links"><span class="product-card-link">→ Full Review</span></div>
